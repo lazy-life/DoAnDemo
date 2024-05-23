@@ -1,0 +1,305 @@
+@import '../abstracts/variables.scss';
+
+#personal-wrapper {
+    background-color: rgba(0, 0, 0, 0.64);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    #information-wrapper {
+        width: 50rem;
+        height: 25rem;
+        margin: 0;
+        background-color: $white;
+        display: flex;
+        border-radius: 20px;
+        box-shadow: rgba(38, 0, 0, 0.35) 0px 5px 15px;
+
+        .left {
+            width: 40%;
+            
+            padding: 20px 10px;
+
+            .personalInfor,
+            .password {
+                background-color: $color15;
+                padding: 0px 20px;
+                height: 14%;
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                margin-bottom: 10px;
+            }
+
+            .personalInfor:hover,
+            .password:hover {
+                background-color: $color17;
+                cursor: pointer;
+            }
+
+            .personalInfor.focused,
+            .password.focused {
+                background-color: $primaryColor;
+
+                p {
+                    color: $white;
+                }
+            }
+
+            .personalInfor p,
+            .password p {
+                font-family: 'GoogleSans-Medium';
+                margin: 0;
+                color: $color10;
+            }
+        }
+
+        .right {
+            width: 60%;
+            border-left: 3px solid $color26;
+
+            .titleInfor {
+                text-align: center;
+                padding: 20px 0 0 0;
+
+            }
+
+            .titleInfor p {
+                font-family: 'GoogleSans-Medium';
+                font-size: 18px;
+                margin: 0 0 20px 0;
+            }
+
+            .avatarInfor {
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+                margin-bottom: 20px;
+            }
+
+            .specialize,
+            .level,
+            .email,
+            .username {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid $color16;
+                margin: 20px 20px 0 20px;
+            }
+
+            .avatarInfor p,
+            .specialize p,
+            .level p,
+            .email p,
+            .username p {
+                margin: 0;
+            }
+
+            .fullname {
+                margin-left: 10px;
+
+                .name {
+                    font-family: 'GoogleSans-Bold';
+                    font-size: 18px;
+                }
+
+                .age {
+                    font-family: 'GoogleSans-Medium';
+                    font-size: 16px;
+                }
+            }
+
+            .avatarName {
+                height: 70px;
+                width: 70px;
+                background-color: $color3;
+                border: 3px solid $white;
+                color: $white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+            }
+
+            .avatarName span {
+                font-size: 26px;
+            }
+
+            .titleUser {
+                font-family: 'GoogleSans-Medium';
+                font-size: 16px;
+            }
+
+            .dataUser {
+                font-size: 14px;
+            }
+
+            .btnClose {
+                display: flex;
+                justify-content: right;
+
+                .closeBtn {
+                    background-color: $primaryColor;
+                    width: fit-content;
+                    font-family: 'GoogleSans-Medium';
+                    color: $white;
+                    border-radius: 20px;
+                    margin: 30px 20px 20px 20px;
+                    padding: 7px 20px;
+                    width: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .closeBtn:hover {
+                    cursor: pointer;
+                }
+
+                .cancelBtn,
+                .saveBtn {
+                    background-color: $primaryColor;
+                    width: fit-content;
+                    font-family: 'GoogleSans-Medium';
+                    color: $white;
+                    border-radius: 20px;
+                    margin: 20px 20px 15px 0;
+                    padding: .5rem 1.2rem;
+                    width: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .cancelBtn:hover,
+                .saveBtn:hover {
+                    cursor: pointer;
+                }
+
+                .cancelBtn:hover{
+                    background-color: $color28;
+                    color: $white;
+                }
+
+                .cancelBtn {
+                    background-color: $color5;
+                    color: $white;
+                }
+            }
+
+            .borderChangePassword {
+                margin: 0 30px;
+
+                .oldPass,
+                .newPass,
+                .reNewPass {
+                    border: 1px solid $color14;
+                    border-radius: 20px;
+                    padding: 15px 10px;
+                    margin-top: 15px;
+                }
+
+                .oldPass,
+                .newPass,
+                .reNewPass {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .oldPass svg,
+                .newPass svg,
+                .reNewPass svg {
+                    width: 20px;
+                    height: 20px;
+                    // padding: 5px;
+                }
+
+                .oldPass Svg:hover,
+                .newPass svg:hover,
+                .reNewPass svg:hover {
+                    cursor: pointer;
+                    background-color: $color12;
+                    border-radius: 50%;
+                }
+
+                .oldPass input,
+                .newPass input,
+                .reNewPass input {
+                    width: 95%;
+                    border: none !important;
+                    border-color: none !important;
+                    box-shadow: none !important;
+                    outline: none !important;
+                }
+
+
+
+            }
+
+            .borderLinkAccount{
+                margin: 0 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: center;
+                height: 65%;
+                color: $textTitleColor;
+
+                p{
+                    margin: 0;
+                }
+
+                .noticeNotLink{
+                    width: 100%;
+                    padding: .5rem;
+                }
+                
+                .noticeLink{
+                    width: 100%;
+                    padding: .5rem;
+
+                    .account{
+                        border: 1px solid $primaryColor;
+                        border-radius: 20px;
+                        padding: .5rem;
+                        background-color: $color8;
+                        margin-top: .2rem;
+                    }
+                }
+
+                button{
+                    background-color: $color14;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .forgotPassword {
+                text-align: center;
+                color: $color18;
+                font-size: 14px;
+            }
+
+            .forgotPassword:hover {
+                cursor: pointer;
+            }
+
+        }
+    }
+}

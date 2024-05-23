@@ -1,0 +1,204 @@
+#mutiple-select {
+    // z-index: 1;
+    font-size: 16px;
+    border-radius: 20px;
+
+
+    .dropbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .select {
+        border: 1px solid $color26;
+        border-radius: 30px;
+    }
+
+
+    .dropdown {
+        height: fit-content;
+        width: 100%;
+        // padding-left: 10px;
+        position: fixed;
+        max-height: 18rem;
+        overflow-y: hidden;
+        background-color: $white;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 10px 10px;
+        margin-top: 5px;
+
+        .search {
+            background-color: $white;
+            padding-bottom: 5px;
+            display: flex;
+
+            input {
+                border-radius: 10px !important;
+                padding: 5px 10px !important;
+                width: 80% !important;
+            }
+
+            button {
+                background-color: $primaryColor;
+                color: white;
+                margin-left: 5px;
+                border-radius: 10px;
+                width: 20% !important;
+            }
+        }
+
+        .select:hover {
+            cursor: pointer;
+        }
+
+
+
+    }
+
+    .scroll {
+        max-height: 14rem;
+        overflow-y: auto;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        padding-top: 10px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $color1;
+            border-radius: 30px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: $color1;
+            border-radius: 30px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        input:focus {
+            border-color: transparent !important;
+            box-shadow: none !important;
+            // box-shadow: none !important;
+        }
+
+        .group {
+            width: 100% !important;
+            padding: 5px !important;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: .7rem;
+            margin-bottom: .5rem;
+
+            input[type="checkbox"] {
+                position: relative;
+                width: 1.7rem !important;
+                height: 1.7rem !important;
+                background-color: $color24;
+                border-radius: 10px !important;
+                appearance: none;
+                cursor: pointer;
+            }
+
+            input[type="checkbox"]:checked {
+                background-color: $primaryColor;
+            }
+
+            input[type="checkbox"]::before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                width: 5px;
+                height: 12px;
+                border: 3px solid transparent;
+                border-left: none;
+                border-top: none;
+                transform: rotate(45deg) scale(1);
+            }
+
+            input[type="checkbox"]:checked::before {
+                border-color: #fff;
+                animation: checAnim .2s ease;
+            }
+
+            @keyframes checAnim {
+                from {
+                    transform: rotate(45deg) scale(0);
+                }
+            }
+
+            label {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                height: 1.8rem;
+                cursor: pointer;
+            }
+
+        }
+
+        .group:hover {
+            background-color: $color8;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.custom-select .ant-select-selector {
+    // border: 2px solid transparent; /* Example border color */
+}
+
+/* Custom border style for the search input when it's visible */
+.custom-select,
+.ant-select-selector,
+.ant-select-show-search {
+    border: 0px solid transparent;
+    /* Example border color */
+    box-shadow: none !important;
+    font-size: 16px;
+
+    input:focus {
+        border-color: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.ant-select-open {
+    outline: none !important;
+}
+
+.ant-select-focused {
+    outline: none !important;
+    border: none !important;
+}
+
+
+.ant-select-item-option-active {
+    background-color: $color24 !important;
+    color: $textTitleColor !important;
+}
+
+.ant-select-item-option-content{
+    font-size: 16px !important;
+}
+
+.ant-select-item-option-selected{
+    background-color: $color42 !important;
+}
+.ant-select-item-option-selected:hover{
+    color: $color10 !important;
+}

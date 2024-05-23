@@ -1,0 +1,117 @@
+#addSemester-wrapper {
+    background-color: rgba(0, 0, 0, 0.64);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: $textTitleColor !important;
+
+    .addSemesterBorder {
+        width: 40%;
+        height: 50%;
+        background-color: $white;
+        border-radius: 20px;
+
+        P {
+            margin: 0;
+        }
+
+        .top {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid $color14;
+
+            p {
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        .content {
+            width: 100%;
+            height: 75%;
+            padding: .5rem 1rem;
+
+            .contentMain {
+                display: flex;
+                align-items: center;
+                height: 25%;
+
+                .leftContent {
+                    width: 30%;
+
+                    p{
+                        font-weight: 600;
+                    }
+                }
+
+                .rightContent {
+                    width: 70%;
+
+                    .semesterName {
+                        border: 2px solid $color23;
+                        border-radius: 20px;
+                        padding: .4rem 1rem;
+                        width: 90%;
+                    }
+
+                    .semesterName:focus {
+                        outline: none;
+                        border-color: $color23 !important;
+                        box-shadow: none !important;
+                    }
+
+                    .dateSemester {
+                        width: 90%;
+                        border: 2px solid $color23;
+
+                        input {
+                            padding: .2rem .5rem;
+                            font-size: 16px;
+                        }
+                    }
+
+                    input:focus {
+                        outline: none;
+                        border-color: $color23 !important;
+                        box-shadow: none !important;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            height: 15%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            padding: 0 1rem;
+            border-top: 2px solid $color14;
+
+            button {
+                // height: 80%;
+                border-radius: 20px;
+                padding: .5rem 3rem;
+                color: $white;
+            }
+
+            .save {
+                background-color: $primaryColor;
+                margin-left: 1rem;
+            }
+
+            .cancel {
+                background-color: $color5;
+            }
+        }
+    }
+}

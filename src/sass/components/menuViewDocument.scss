@@ -1,0 +1,45 @@
+.menuViewDocument-wrapper {
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+    width: max-content;
+    padding: .2rem .3rem;
+    position: absolute;
+    z-index: 999;
+
+    .actionMenuViewDocument {
+        display: flex;
+        align-items: center;
+        margin-bottom: .3rem;
+        border-radius: 10px;
+        padding: .3rem;
+
+        p {
+            margin: 0 1rem;
+            padding: 0 0 0 .2rem !important;
+        }
+
+        svg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    }
+
+    .actionMenuViewDocument:hover {
+        cursor: pointer;
+        background-color: $color21;
+    }
+}
+
+.itemClick {
+    width: 2rem;
+    padding: .2rem .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}

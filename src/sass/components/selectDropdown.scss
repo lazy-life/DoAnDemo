@@ -1,0 +1,127 @@
+#select-wrapper {
+    font-size: 16px;
+    padding: .2rem;
+
+
+    .searchInput {
+        width: 100%;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .dropbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .select {
+        border: 1px solid $color26;
+        border-radius: 30px;
+    }
+
+
+    .dropdown {
+        height: fit-content;
+        width: 100%;
+        color: $textTitleColor !important;
+        position: fixed;
+        max-height: 18rem;
+        overflow-y: hidden;
+        background-color: $white;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 10px 10px;
+        margin-top: 5px;
+
+        .search {
+            background-color: $white;
+            padding-bottom: 5px;
+
+            input {
+                border-radius: 10px !important;
+                padding: 5px 10px !important;
+                width: 100% !important;
+                outline: 2px solid $color38;
+            }
+
+            // input:focus{
+            //     box-shadow: none;
+            //     outline: 2px solid $color38;
+            // }
+        }
+
+        .select:hover {
+            cursor: pointer;
+        }
+
+
+
+    }
+
+    .scroll {
+        max-height: 14rem;
+        overflow-y: auto;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        padding-top: 10px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $color1;
+            border-radius: 30px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: $color1;
+            border-radius: 30px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        p {
+            width: 100% !important;
+            padding: 5px !important;
+            border-radius: 10px;
+        }
+
+        p:hover {
+            background-color: $color8;
+            cursor: pointer;
+        }
+
+    }
+}
+
+
+.ant-select-selection-search input {
+    font-family: 'GoogleSans-Regular' !important;
+    font-size: 16px !important;
+}
+
+.ant-select-item-option-content,
+.ant-select-selection-item,
+.ant-select-selection-placeholder {
+    font-family: 'GoogleSans-Regular' !important;
+    font-size: 16px !important;
+}
+
+.ant-select-dropdown {
+    // padding: 0 !important;
+}
+
+.ant-select-dropdown-open {
+    padding: 0 !important;
+}

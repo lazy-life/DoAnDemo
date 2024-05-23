@@ -1,0 +1,130 @@
+#view-document-wrapper {
+    background-color: rgba(0, 0, 0, 0.64);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: $color10;
+
+    .borderPopUp {
+        width: 50%;
+        background-color: $white;
+        border-radius: 20px;
+
+        .topDocument {
+            padding: .5rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: .15rem solid $color27;
+            align-items: center;
+
+            p {
+                margin: 0;
+                font-weight: 700;
+                font-size: 22px;
+            }
+
+            svg {
+                width: 1.7rem;
+                height: 1.7rem;
+                border-radius: 50%;
+                padding: .1rem;
+            }
+
+            svg:hover {
+                cursor: pointer;
+                background-color: $color8;
+            }
+        }
+
+        .middleDocument {
+            padding: .5rem 1.5rem;
+            min-height: 10rem;
+
+            .perScorm {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid $color32;
+                align-items: center;
+                margin-top: .1rem;
+
+
+                p {
+                    padding-top: .9rem;
+                    font-weight: 600;
+                    margin: 0;
+                    padding-bottom: .5rem;
+                    margin-left: .5rem;
+                }
+
+                .fileName {
+                    margin-left: .5rem;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        width: 1.3rem;
+                        height: 1.3rem;
+                    }
+                }
+
+                .menu {
+                    margin-right: 1rem;
+                    width: fit-content;
+                    height: fit-content;
+                    padding: .3rem;
+
+                    svg{
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+
+
+            }
+
+            .perScorm:hover {
+                cursor: pointer;
+                background-color: $color21;
+                border-radius: 10px;
+            }
+
+            .noContent {
+                width: 100%;
+                height: 10rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $textColor;
+
+                svg {
+                    width: 3rem;
+                    height: 3rem;
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+
+
+        .botDocument {
+            padding: .5rem 1.5rem;
+            margin-top: 1rem;
+            border-top: .15rem solid $color27;
+            display: flex;
+            justify-content: right;
+
+            button {
+                background-color: $primaryColor;
+                color: $white;
+                border-radius: 20px;
+                padding: .5rem 2rem;
+            }
+        }
+    }
+
+}

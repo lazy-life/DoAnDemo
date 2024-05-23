@@ -1,0 +1,24 @@
+#create-department-wrapper {
+    .modal-dialog {
+        // z-index: 30;
+        max-width: 50%;
+
+        .modal-content1 {
+            height: fit-content;
+            width: fit-content;
+            background-color: $white !important;
+        }
+
+        .modal-create {
+            border-radius: 30px;
+
+            .create-title {
+                font-size: 1.25rem;
+            }
+
+            label {
+                width: 150px !important;
+            }
+        }
+    }
+}

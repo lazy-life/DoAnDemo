@@ -1,0 +1,22 @@
+#modify-lesson-wrapper {
+    background-color: rgba(0, 0, 0, 0.64);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    .pop-up {
+        border-radius: 30px;
+        width: 70%;
+        .subject-name {
+            background-color: rgba($primaryColor, 0.5);
+        }
+        textarea {
+            resize: none;
+        }
+    }
+}

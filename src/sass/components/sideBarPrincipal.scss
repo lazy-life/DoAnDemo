@@ -1,0 +1,74 @@
+#sideBar-principal {
+    // height: calc(100vh - 70px);
+    background-color: $white;
+    color: $textTitleColor;
+
+    .principalAction, .check {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        padding: 10px 10px;
+        justify-content: space-between;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            color: $color10;
+        }
+
+        p{
+            margin: 0;
+        }
+        .mainTitle {
+            margin: 0;
+            font-size: 18px;
+            font-family: "GoogleSans-Medium";
+            color: $color10;
+        }
+
+        .iconTitle {
+            display: flex;
+            align-items: center;
+        }
+        border-radius: 30px;
+    }
+
+    .principalAction:hover {
+        cursor: pointer;
+        background-color: $color21;
+    }
+
+    .check {
+        background-color: $color26;
+        border-radius: 30px;
+    }
+    .check:hover {
+        cursor: pointer;
+    }
+
+    ul li {
+        list-style-type: none;
+        margin-bottom: 10px;
+
+        .secondTitle {
+            font-family: "GoogleSans-Regular";
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    .active {
+        background-color: $color26 !important;
+    }
+    
+    .active:hover {
+        cursor: pointer;
+        background-color: rgba($primaryColor, 0.6);
+    }
+
+    .link {
+        text-decoration: none;
+        color: $textColor;
+    }
+}

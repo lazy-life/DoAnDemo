@@ -1,0 +1,93 @@
+#overall-subjects-wrapper {
+    #view-subject-container {
+        .view-subject-title {
+            // font-size: 1.25rem;
+            color: $color10;
+            div {
+                // width: 250px;
+                border-radius: 20px 20px 0 0;
+                svg {
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        .table-container {
+            height: calc(100vh - 180px);
+            overflow-y: auto;
+            border-radius: 0 20px 20px 20px;
+            // font-size: 1.25rem;
+            .table {
+                border-radius: 30px !important;
+                th {
+                    color: $textColor;
+                }
+
+                th:last-child {
+                    border-radius: 30px;
+                }
+
+                th,
+                td {
+                    border: none;
+                }
+
+                .even-row {
+                    td {
+                        background-color: $color21;
+                    }
+                }
+
+                .odd-row {
+                    background-color: white;
+                }
+
+                .icon:hover {
+                    cursor: pointer;
+                    background-color: $color25;
+                    border-radius: 20px;
+                }
+            }
+        }
+        .table-container::-webkit-scrollbar {
+            height: 7px;
+            width: 7px;
+        }
+
+        .table-container::-webkit-scrollbar-thumb {
+            background: $color14;
+            border-radius: 6px;
+        }
+
+        /* Thanh cuộn dọc */
+        .table-container::-webkit-scrollbar-track {
+            margin: 0;
+            background: $white;
+            border-radius: 6px;
+        }
+
+        .table-container::-webkit-scrollbar-track {
+            margin: 1rem 0;
+            background: transparent;
+            border-radius: 6px;
+        }
+
+        .table-container::-webkit-scrollbar-thumb:hover {
+            background: $color1;
+        }
+    }
+
+    #add-subject-wrapper {
+        .add-subject-container {
+            // font-size: 24px;
+            margin-top: 55px;
+            border-radius: 20px;
+            label {
+                width: 150px;
+            }
+            .subject-list {
+                height: fit-content;
+            }
+        }
+    }
+}

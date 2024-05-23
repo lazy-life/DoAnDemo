@@ -1,0 +1,218 @@
+@import '../abstracts/variables.scss';
+
+
+
+#header-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+
+    .wrapper {
+        height: 70px;
+        width: 100%;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        padding: 0 2%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .logo {
+        height: 50%;
+        width: 25%;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu {
+        margin-right: 20px;
+    }
+
+    .logo .menu:hover {
+        cursor: pointer;
+    }
+
+    .logo img:hover {
+        cursor: pointer;
+    }
+
+    .searchBar {
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: $color2;
+        border-radius: 10px;
+        width: 50%;
+        padding: 0.4% 1%;
+        font-size: 16px;
+    }
+
+    .searchBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .searchBtn:hover {
+        background-color: $color4;
+        cursor: pointer;
+    }
+
+    .clearData{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg{
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .clearData:hover {
+        background-color: $color4;
+        cursor: pointer;
+    }
+
+
+
+    .searchBar input {
+        border-radius: 0 10px 10px 0;
+        background-color: $color2;
+        border: none;
+        width: 95%;
+        outline: none;
+        padding-left: 1%;
+    }
+
+    .searchBar.focused {
+        background-color: $white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .inputBar.focused {
+        background-color: $white;
+    }
+
+    input:focus {
+        border-color: none !important;
+        box-shadow: none !important;
+    }
+
+    .avatar {
+        display: flex;
+        align-items: center;
+        width: 25%;
+        height: 100%;
+        justify-content: flex-end;
+
+        .changeScreenTeacher{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+                background-color: $color18;
+                color: $white;
+                width: 90%;
+                height: 60%;
+                border-radius: 15px;
+            }
+            button:hover{
+                background-color: $color3;
+            }
+        }
+        .changeScreenManage{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+                background-color: $primaryColor;
+                color: $white;
+                width: 90%;
+                height: 60%;
+                border-radius: 15px;
+            }
+            button:hover{
+                background-color: $color43;
+            }
+        }
+    }
+
+
+    .avatarName {
+        height: 40px;
+        width: 40px;
+        background-color: $color3;
+        border: 3px solid $white;
+        color: $white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .avatarName:hover {
+        cursor: pointer;
+        border: 3px solid rgb(158, 158, 158);
+    }
+
+    .noticeIcon {
+        color: $color5;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 3%;
+        position: relative;
+    }
+
+    .notification-count {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        width: 1.2rem;
+        height: 1.2rem;
+        padding: 4px 4px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .noticeIcon:hover {
+        background-color: $color6;
+        cursor: pointer;
+    }
+
+    .imageContainer {
+        position: relative;
+    }
+
+    .popup {
+        position: absolute;
+        top: 60px;
+        right: 25px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 400px;
+    }
+}

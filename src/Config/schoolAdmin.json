@@ -1,0 +1,365 @@
+[
+    {
+        "id": 1,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Hà Nội",
+        "hieuTruong": "Nguyễn Văn A",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 2,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Hà Nội",
+        "hieuTruong": "Nguyễn Thị B",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 3,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia TP.Hồ Chí Minh",
+        "hieuTruong": "Trần Văn C",
+        "thanhPho": "TP.Hồ Chí Minh"
+    },
+    {
+        "id": 4,
+        "tenTruong": "THPT Sư phạm - ĐH Sư phạm Hà Nội",
+        "hieuTruong": "Lê Thị D",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 5,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Đà Nẵng",
+        "hieuTruong": "Nguyễn Văn E",
+        "thanhPho": "Đà Nẵng"
+    },
+    {
+        "id": 6,
+        "tenTruong": "THPT Ngoại ngữ - ĐH Ngoại ngữ Hà Nội",
+        "hieuTruong": "Trần Thị F",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 7,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Huế",
+        "hieuTruong": "Nguyễn Văn G",
+        "thanhPho": "Huế"
+    },
+    {
+        "id": 8,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Cần Thơ",
+        "hieuTruong": "Trần Thị H",
+        "thanhPho": "Cần Thơ"
+    },
+    {
+        "id": 9,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Nha Trang",
+        "hieuTruong": "Lê Văn I",
+        "thanhPho": "Nha Trang"
+    },
+    {
+        "id": 10,
+        "tenTruong": "THPT Sư phạm - ĐH Sư phạm Đà Lạt",
+        "hieuTruong": "Nguyễn Thị K",
+        "thanhPho": "Đà Lạt"
+    },
+    {
+        "id": 11,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Hải Phòng",
+        "hieuTruong": "Trần Văn L",
+        "thanhPho": "Hải Phòng"
+    },
+    {
+        "id": 12,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Vũng Tàu",
+        "hieuTruong": "Lê Thị M",
+        "thanhPho": "Vũng Tàu"
+    },
+    {
+        "id": 13,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Bình Dương",
+        "hieuTruong": "Nguyễn Văn N",
+        "thanhPho": "Bình Dương"
+    },
+    {
+        "id": 14,
+        "tenTruong": "THPT Sư phạm - ĐH Sư phạm Cần Thơ",
+        "hieuTruong": "Trần Thị O",
+        "thanhPho": "Cần Thơ"
+    },
+    {
+        "id": 15,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Quy Nhơn",
+        "hieuTruong": "Lê Văn P",
+        "thanhPho": "Quy Nhơn"
+    },
+    {
+        "id": 16,
+        "tenTruong": "THPT Ngoại ngữ - ĐH Ngoại ngữ TP.Hồ Chí Minh",
+        "hieuTruong": "Nguyễn Thị Q",
+        "thanhPho": "TP.Hồ Chí Minh"
+    },
+    {
+        "id": 17,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Đồng Nai",
+        "hieuTruong": "Trần Văn R",
+        "thanhPho": "Đồng Nai"
+    },
+    {
+        "id": 18,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Cà Mau",
+        "hieuTruong": "Lê Thị S",
+        "thanhPho": "Cà Mau"
+    },
+    {
+        "id": 19,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Hòa Bình",
+        "hieuTruong": "Nguyễn Văn T",
+        "thanhPho": "Hòa Bình"
+    },
+    {
+        "id": 20,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Yên Bái",
+        "hieuTruong": "Trần Thị U",
+        "thanhPho": "Yên Bái"
+    },
+
+
+    {
+        "id": 21,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Hà Nội",
+        "hieuTruong": "Nguyễn Văn A",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 22,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Hà Nội",
+        "hieuTruong": "Nguyễn Thị B",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 23,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia TP.Hồ Chí Minh",
+        "hieuTruong": "Trần Văn C",
+        "thanhPho": "TP.Hồ Chí Minh"
+    },
+    {
+        "id": 24,
+        "tenTruong": "THPT Sư phạm - ĐH Sư phạm Hà Nội",
+        "hieuTruong": "Lê Thị D",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 25,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Đà Nẵng",
+        "hieuTruong": "Nguyễn Văn E",
+        "thanhPho": "Đà Nẵng"
+    },
+    {
+        "id": 26,
+        "tenTruong": "THPT Ngoại ngữ - ĐH Ngoại ngữ Hà Nội",
+        "hieuTruong": "Trần Thị F",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 27,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Huế",
+        "hieuTruong": "Nguyễn Văn G",
+        "thanhPho": "Huế"
+    },
+    {
+        "id": 28,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Cần Thơ",
+        "hieuTruong": "Trần Thị H",
+        "thanhPho": "Cần Thơ"
+    },
+    {
+        "id": 29,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Nha Trang",
+        "hieuTruong": "Lê Văn I",
+        "thanhPho": "Nha Trang"
+    },
+    {
+        "id": 30,
+        "tenTruong": "THPT Sư phạm - ĐH Sư phạm Đà Lạt",
+        "hieuTruong": "Nguyễn Thị K",
+        "thanhPho": "Đà Lạt"
+    },
+    {
+        "id": 31,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Hải Phòng",
+        "hieuTruong": "Trần Văn L",
+        "thanhPho": "Hải Phòng"
+    },
+    {
+        "id": 32,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Vũng Tàu",
+        "hieuTruong": "Lê Thị M",
+        "thanhPho": "Vũng Tàu"
+    },
+    {
+        "id": 33,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Bình Dương",
+        "hieuTruong": "Nguyễn Văn N",
+        "thanhPho": "Bình Dương"
+    },
+    {
+        "id": 34,
+        "tenTruong": "THPT Sư phạm - ĐH Sư phạm Cần Thơ",
+        "hieuTruong": "Trần Thị O",
+        "thanhPho": "Cần Thơ"
+    },
+    {
+        "id": 35,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Quy Nhơn",
+        "hieuTruong": "Lê Văn P",
+        "thanhPho": "Quy Nhơn"
+    },
+    {
+        "id": 36,
+        "tenTruong": "THPT Ngoại ngữ - ĐH Ngoại ngữ TP.Hồ Chí Minh",
+        "hieuTruong": "Nguyễn Thị Q",
+        "thanhPho": "TP.Hồ Chí Minh"
+    },
+    {
+        "id": 37,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Đồng Nai",
+        "hieuTruong": "Trần Văn R",
+        "thanhPho": "Đồng Nai"
+    },
+    {
+        "id": 38,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Cà Mau",
+        "hieuTruong": "Lê Thị S",
+        "thanhPho": "Cà Mau"
+    },
+    {
+        "id": 39,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Hòa Bình",
+        "hieuTruong": "Nguyễn Văn T",
+        "thanhPho": "Hòa Bình"
+    },
+    {
+        "id": 40,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Yên Bái",
+        "hieuTruong": "Trần Thị U",
+        "thanhPho": "Yên Bái"
+    },
+
+    {
+        "id": 41,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Hà Nội",
+        "hieuTruong": "Nguyễn Văn A",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 42,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Hà Nội",
+        "hieuTruong": "Nguyễn Thị B",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 43,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia TP.Hồ Chí Minh",
+        "hieuTruong": "Trần Văn C",
+        "thanhPho": "TP.Hồ Chí Minh"
+    },
+    {
+        "id": 44,
+        "tenTruong": "THPT Sư phạm - ĐH Sư phạm Hà Nội",
+        "hieuTruong": "Lê Thị D",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 45,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Đà Nẵng",
+        "hieuTruong": "Nguyễn Văn E",
+        "thanhPho": "Đà Nẵng"
+    },
+    {
+        "id": 46,
+        "tenTruong": "THPT Ngoại ngữ - ĐH Ngoại ngữ Hà Nội",
+        "hieuTruong": "Trần Thị F",
+        "thanhPho": "Hà Nội"
+    },
+    {
+        "id": 47,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Huế",
+        "hieuTruong": "Nguyễn Văn G",
+        "thanhPho": "Huế"
+    },
+    {
+        "id": 48,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Cần Thơ",
+        "hieuTruong": "Trần Thị H",
+        "thanhPho": "Cần Thơ"
+    },
+    {
+        "id": 49,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Nha Trang",
+        "hieuTruong": "Lê Văn I",
+        "thanhPho": "Nha Trang"
+    },
+    {
+        "id": 50,
+        "tenTruong": "THPT Sư phạm - ĐH Sư phạm Đà Lạt",
+        "hieuTruong": "Nguyễn Thị K",
+        "thanhPho": "Đà Lạt"
+    },
+    {
+        "id": 51,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Hải Phòng",
+        "hieuTruong": "Trần Văn L",
+        "thanhPho": "Hải Phòng"
+    },
+    {
+        "id": 52,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Vũng Tàu",
+        "hieuTruong": "Lê Thị M",
+        "thanhPho": "Vũng Tàu"
+    },
+    {
+        "id": 53,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Bình Dương",
+        "hieuTruong": "Nguyễn Văn N",
+        "thanhPho": "Bình Dương"
+    },
+    {
+        "id": 54,
+        "tenTruong": "THPT Sư phạm - ĐH Sư phạm Cần Thơ",
+        "hieuTruong": "Trần Thị O",
+        "thanhPho": "Cần Thơ"
+    },
+    {
+        "id": 55,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Quy Nhơn",
+        "hieuTruong": "Lê Văn P",
+        "thanhPho": "Quy Nhơn"
+    },
+    {
+        "id": 56,
+        "tenTruong": "THPT Ngoại ngữ - ĐH Ngoại ngữ TP.Hồ Chí Minh",
+        "hieuTruong": "Nguyễn Thị Q",
+        "thanhPho": "TP.Hồ Chí Minh"
+    },
+    {
+        "id": 57,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Đồng Nai",
+        "hieuTruong": "Trần Văn R",
+        "thanhPho": "Đồng Nai"
+    },
+    {
+        "id": 58,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Cà Mau",
+        "hieuTruong": "Lê Thị S",
+        "thanhPho": "Cà Mau"
+    },
+    {
+        "id": 59,
+        "tenTruong": "THPT Khoa học Xã hội - ĐH Quốc gia Hòa Bình",
+        "hieuTruong": "Nguyễn Văn T",
+        "thanhPho": "Hòa Bình"
+    },
+    {
+        "id": 60,
+        "tenTruong": "THPT Khoa học Tự nhiên - ĐH Quốc gia Yên Bái",
+        "hieuTruong": "Trần Thị U",
+        "thanhPho": "Yên Bái"
+    }
+]

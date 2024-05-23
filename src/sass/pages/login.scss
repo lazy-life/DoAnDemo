@@ -1,0 +1,142 @@
+#login-wrapper {
+    background-color: $backgroundColor;
+    height: 100vh;
+    width: 100%;
+
+    .body {
+        height: 80vh;
+    }
+
+    .logo-title {
+        width: 100%;
+
+    }
+
+    .leftContent {
+        width: 50%;
+        display: flex;
+        justify-content: right;
+    }
+
+    #logo-block {
+        width: fit-content;
+
+        img {
+            width: 45%;
+            margin-bottom: .8rem;
+        }
+
+        p {
+            font-size: 23px;
+            color: $color47;
+        }
+    }
+
+    .rightContentError {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightContent {
+        width: 50%;
+
+    }
+
+    .form-container {
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+        width: 450px;
+        border-radius: 20px;
+
+        input {
+            font-size: 18px;
+            padding: .77rem .5rem;
+            border-radius: 20px;
+            border: 1px solid silver;
+        }
+
+        .login-btn {
+            font-size: 20px;
+            margin-top: .5rem;
+            padding: .6rem;
+            border-radius: 20px;
+            font-family: 'GoogleSans-Medium';
+        }
+    }
+
+    .mb-4 {
+        margin-bottom: 1.3rem !important;
+    }
+
+    .forget-password {
+        margin-bottom: 2rem;
+    }
+
+    .login-google-btn {
+        background-color: $color48 !important;
+        color: $textTitleColor !important;
+        border: 2px solid $color40;
+        display: flex;
+        padding: 0.3rem 0 !important;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            margin: 0;
+            padding-left: 1rem;
+        }
+    }
+
+    .login-fail-warning,
+    .warning-forget-password {
+        color: $primaryColor;
+        font-size: 16px;
+        margin-bottom: .5rem;
+        padding: 0 .5rem;
+    }
+
+    .login-footer {
+        height: 20vh;
+
+        a {
+            color: $textColor;
+        }
+    }
+
+    .inputPasswordLogin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        width: 100%;
+        border: 1px solid silver;
+        border-radius: 20px;
+
+        input {
+            position: relative;
+            width: 100%;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important
+        }
+
+        svg {
+            position: relative;
+            right: 5%;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        svg:hover {
+            cursor: pointer;
+            background-color: $color12;
+            border-radius: 50%;
+        }
+    }
+
+    .inputPasswordLogin.focused {
+        border-color: #fff !important;
+    box-shadow: 0 0 0 0.15rem #ff510030 !important;
+    }
+}

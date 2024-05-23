@@ -1,0 +1,17 @@
+#update-school-wrapper {
+    .modal-dialog {
+        max-width: 50%;
+
+        .modal-create {
+            border-radius: 30px;
+
+            .create-title {
+                font-size: 1.25rem;
+            }
+
+            label {
+                width: 180px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+body {
+    color: $textColor;
+    font-family: "GoogleSans-Regular", "GoogleSans-Medium", "GoogleSans-Bold";
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #fff !important;
+    box-shadow: 0 0 0 0.15rem #ff510030 !important;
+    // box-shadow: none !important;
+}
+
+.elp-border-primary {
+    border-color: $primaryColor !important;
+}
+
+.elp-bg-primary {
+    background-color: $primaryColor !important;
+}
+
+.elp-text-title {
+    color: $textTitleColor !important;
+}
+
+.elp-text-color {
+    color: $textColor !important;
+}

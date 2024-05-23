@@ -1,0 +1,88 @@
+@import '../abstracts/variables.scss';
+
+#sideBar-wrapper {
+    width: 20%;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding-top: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    
+
+    .principalAction {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        padding: 10px 10px;
+        justify-content: space-between;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            color: $color10;
+        }
+
+        p{
+            margin: 0;
+        }
+        .mainTitle {
+            margin: 0;
+            font-size: 18px;
+            font-family: "GoogleSans-Medium";
+            color: $color10;
+        }
+
+        .iconTitle{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .principalAction:hover{
+        cursor: pointer;
+        background-color: $color21;
+        border-radius: 30px;
+    }
+
+    ul li {
+        list-style-type: none;
+        margin-bottom: 10px;
+
+        .secondTitle {
+            font-family: "GoogleSans-Regular";
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+#sideBar-wrapper::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+}
+
+#sideBar-wrapper::-webkit-scrollbar-thumb {
+    background: $color14;
+    border-radius: 6px;
+}
+
+/* Thanh cuộn dọc */
+#sideBar-wrapper::-webkit-scrollbar-track {
+    margin: 0;
+    background: $white;
+    border-radius: 6px;
+}
+
+#sideBar-wrapper::-webkit-scrollbar-track {
+    margin: 1rem 0;
+    background: transparent;
+    border-radius: 6px;
+}
+
+#sideBar-wrapper::-webkit-scrollbar-thumb:hover {
+    background: $color1;
+}

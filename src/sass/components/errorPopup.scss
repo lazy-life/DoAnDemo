@@ -1,0 +1,59 @@
+#error-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.64);
+    color: $textTitleColor;
+    font-family: 'GoogleSans-Medium';
+
+    .errorSelect {
+        background-color: $white;
+        width: 30%;
+        height: fit-content;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+        border: 3px solid #F56060;
+
+        .warning {
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0;
+
+            svg {
+                background-color: $white;
+                width: 5rem;
+                height: fit-content;
+                border-radius: 50%;
+                border: 5px solid #FFBA00;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .btnClose {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1rem;
+
+            button {
+                width: 50%;
+                padding: .7rem;
+                border-radius: 20px;
+                background-color: $primaryColor;
+                color: $white;
+                font-size: 18px;
+            }
+        }
+    }
+}

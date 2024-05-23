@@ -1,0 +1,657 @@
+#timeTable-wrapper {
+    background-color: $color20;
+    margin: 0 1rem;
+    color: $textTitleColor !important;
+
+    .timeTableBorder {
+        width: 100%;
+        max-height: calc(100vh - 8rem);
+        min-height: calc(100vh - 8rem);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            margin: 0;
+        }
+
+        .leftTimeTable {
+            width: 8%;
+            height: calc(100vh - 8rem);
+            background-color: $white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 4px 2px #c5c5c570;
+
+            p {
+                text-align: center;
+            }
+
+            .titleLeftTimeTable {
+                padding: .3rem .5rem;
+
+                p {
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+
+            .contentLeftTimeTable {
+                border-radius: 0 0 20px 20px;
+                border-top: 2px solid $color40;
+                // box-shadow: 0px -4px 2px -3px $color40;
+                padding: .5rem;
+                overflow-y: auto;
+                height: calc(100vh - 10.5rem);
+
+                .className {
+                    border-radius: 20px;
+                    padding: .3rem 0;
+                    margin-top: .1rem;
+
+                    p {
+                        font-weight: bold;
+                    }
+                }
+
+                .className:hover {
+                    cursor: pointer;
+                    background-color: $color21;
+                }
+
+                .active {
+                    background-color: $color26 !important;
+                }
+            }
+
+            .contentLeftTimeTable::-webkit-scrollbar {
+                height: 7px;
+                width: 7px;
+            }
+
+            .contentLeftTimeTable::-webkit-scrollbar-thumb {
+                background: $color14;
+                border-radius: 6px;
+            }
+
+            /* Thanh cuộn dọc */
+            .contentLeftTimeTable::-webkit-scrollbar-track {
+                margin: 0;
+                background: $white;
+                border-radius: 6px;
+            }
+
+            .contentLeftTimeTable::-webkit-scrollbar-track {
+                margin: 1rem 0;
+                background: transparent;
+                border-radius: 6px;
+            }
+
+            .contentLeftTimeTable::-webkit-scrollbar-thumb:hover {
+                background: $color1;
+            }
+        }
+
+        .rightTimeTable {
+            width: 90%;
+            height: calc(100vh - 8rem);
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .topRightTimeTable {
+                background-color: $white;
+                // height: 30%;
+                border-radius: 20px;
+                box-shadow: 0px 0px 4px 2px #c5c5c570;
+
+                .titleTopRightTimeTable {
+                    height: 3rem;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: .5rem;
+
+
+                    p {
+                        width: 40%;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 18px;
+                        margin: 0;
+                    }
+
+                    button {
+                        width: 40%;
+                        height: 90%;
+                        border-radius: 20px;
+                        background-color: $primaryColor;
+                        color: $white;
+                        padding: .3rem;
+                        font-size: 18px;
+                    }
+
+                    .rightHeader {
+                        width: 30%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: right;
+
+                        .saveBtn {
+                            height: 90%;
+                            width: 30%;
+                            margin-left: 2%;
+                            background-color: $color18;
+                        }
+
+                        .cancelBtn {
+                            width: 30%;
+                            background-color: $color11;
+                        }
+                    }
+
+                    .leftHeader {
+                        width: 30%;
+                    }
+                }
+
+                .contentTopRightTimeTable {
+                    height: calc(100% - 3rem);
+                    border-radius: 0 0 0 20px 20px;
+                    border-top: 2px solid $color40;
+                    padding: .3rem .5rem;
+
+                    .borderTopRightTimeTable {
+                        overflow-y: auto;
+                        width: 100%;
+                        border-radius: 20px;
+                        height: 100%;
+                        padding: 0 1rem;
+
+                        p {
+                            margin: 0;
+                        }
+
+                        .teacherRow {
+                            display: flex;
+                            background-color: $color41;
+                            border-radius: 15px;
+                            margin-bottom: .3rem;
+                            padding: .2rem 0;
+
+                            p {
+                                font-weight: 600;
+                            }
+
+                            .numberName,
+                            .subjectName,
+                            .teacherName {
+                                padding: .3rem 0;
+
+                                p {
+                                    margin: 0;
+                                }
+                            }
+
+                            .numberName,
+                            .subjectName {
+                                border-right: 2px solid $color38;
+                            }
+
+                            .numberName {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+
+                            .subjectName,
+                            .teacherName {
+                                padding: 0 1rem;
+                                display: flex;
+                                align-items: center;
+                            }
+
+                            .teacherName {
+                                width: 100%;
+                                margin: auto;
+
+                                p {
+                                    margin: 0;
+                                    padding: .5rem;
+                                }
+
+                                .selectTeacher {
+                                    width: 80%;
+                                    height: 90%;
+                                    border-radius: 20px;
+                                    padding: 0 1rem;
+                                    border: 1px solid $primaryColor;
+                                    background-color: $white;
+
+                                }
+
+                                .selectTeacher:hover {
+                                    background-color: $white;
+                                }
+                            }
+                        }
+
+                        .teacherRow:hover {
+                            cursor: pointer;
+                            background-color: $color42;
+                        }
+                    }
+                }
+
+                .borderTopRightTimeTable::-webkit-scrollbar {
+                    height: 7px;
+                    width: 7px;
+                }
+
+                .borderTopRightTimeTable::-webkit-scrollbar-thumb {
+                    background: $color14;
+                    border-radius: 6px;
+                }
+
+                /* Thanh cuộn dọc */
+                .borderTopRightTimeTable::-webkit-scrollbar-track {
+                    margin: 0;
+                    background: $white;
+                    border-radius: 6px;
+                }
+
+                .borderTopRightTimeTable::-webkit-scrollbar-track {
+                    margin: 1rem 0;
+                    background: transparent;
+                    border-radius: 6px;
+                }
+
+                .borderTopRightTimeTable::-webkit-scrollbar-thumb:hover {
+                    background: $color1;
+                }
+            }
+
+            .contentRightTimeTable {
+                background-color: $white;
+                // height: 68%;
+                border-radius: 20px;
+                box-shadow: 0px 0px 4px 2px #c5c5c570;
+
+                .titleContentRightTimeTable {
+                    padding: .3rem .5rem;
+                    height: 3rem;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .titleCenterHeader {
+                        text-align: center;
+
+                        p {
+                            margin: 0;
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .btnEditHeader {
+                        display: flex;
+                        justify-content: right;
+                        align-items: center;
+
+                        button {
+                            width: 40%;
+                            border-radius: 20px;
+                            background-color: $primaryColor;
+                            color: $white;
+                            padding: .3rem;
+                            font-size: 18px;
+                        }
+
+                        .saveBtn {
+                            height: 90%;
+                            width: 30%;
+                            margin-left: 2%;
+                            background-color: $color18;
+                        }
+
+                        .cancelBtn {
+                            width: 30%;
+                            background-color: $color11;
+                        }
+                    }
+
+                    .selectSemester {
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .createBtn {
+                            width: 45%;
+                            // height: 100%;
+                            margin-left: 3%;
+                            border-radius: 15px;
+                            background-color: $color18;
+                            color: $white;
+                            padding: .3rem;
+                            font-size: 16px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .borderSemesterSelect {
+                            width: 49%;
+                            border-radius: 15px;
+                            padding: 0rem 0rem;
+                            background-color: $primaryColor;
+                            color: $white;
+                        }
+                        
+                        .borderSemesterSelectFlase {
+                            width: 49%;
+                            height: 100%;
+                            border-radius: 15px;
+                            padding: 0rem 0rem 0rem 1rem;
+                            display: flex;
+                            align-items: center;
+                            background-color: $primaryColor;
+                            color: $white;
+                            cursor: pointer;
+                        }
+
+                        .weekSelect{
+                            background-color: $color18;
+                        }
+
+                        
+                        .borderSemesterSelect:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .contentContentRightTimeTable {
+                    height: calc(100% - 3rem);
+                    border-radius: 0 0 20px 20px;
+                    // border-top: 2px solid $color40;
+                    padding: .3rem .5rem .5rem .5rem;
+
+                    .borderContentRightTimeTable {
+                        height: 100%;
+                        overflow-y: auto;
+
+                        .topTimeTable {
+                            height: 2.5rem;
+                            width: 100%;
+                            display: flex;
+                            // border-top: 2px solid $color40;
+                            // border-right: 2px solid $color40;
+                            // border-left: 2px solid $color40;
+                            border-bottom: 2px solid $white;
+                            border-radius: 20px 20px 0 0;
+
+                            .slot,
+                            .t2,
+                            .t3,
+                            .t4,
+                            .t5,
+                            .t6 {
+                                border-right: 2px solid $primaryColor;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: $color23;
+
+                                p {
+                                    margin: 0;
+                                }
+                            }
+
+                            .slot {
+                                border-radius: 20px 0 0 0;
+                            }
+
+                            .t7 {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: $color23;
+                                border-radius: 0 20px 0 0;
+
+                                p {
+                                    margin: 0;
+                                }
+                            }
+
+                            p {
+                                margin: 0;
+                                font-weight: 600;
+                                text-align: center;
+                            }
+                        }
+
+                        .contentTimeTable {
+                            height: calc(100% - 2.5rem);
+                            width: 100%;
+
+                            .borderTimeTable {
+                                height: 100%;
+                                width: 100%;
+                                display: flex;
+                                padding: 0;
+                                // border-bottom: 2px solid $color40;
+                                // border-right: 2px solid $color40;
+                                // border-left: 2px solid $color40;
+                                border-radius: 0 0 20px 20px;
+
+                                .slot {
+                                    p {
+                                        text-align: center;
+                                        margin: 0;
+                                    }
+                                }
+
+
+                                .session {
+                                    border-right: 2px solid $color23;
+
+                                }
+
+                                .borderSession {
+                                    height: 100%;
+                                    // padding: .2rem .5rem;
+
+                                    p {
+                                        margin: 0;
+                                    }
+
+                                    text-align: center;
+
+                                    .dataSessionNumberSlot,
+                                    .dataSession,
+                                    .dataSessionHover {
+                                        height: 20%;
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        // border-top: 2px solid $color40;
+                                        padding: 0 .2rem;
+                                        // background-color: $white;
+                                    }
+
+                                    .dataSession:hover {
+                                        cursor: pointer;
+                                        background-color: $color42;
+                                    }
+
+                                    .dataSessionHover:hover {
+                                        cursor: pointer;
+                                    }
+
+
+                                    .editSession {
+                                        padding: .3rem .2rem;
+                                        border-bottom: 2px solid $color20;
+
+                                        // background-color: $white;
+                                        .dataBinded {
+                                            width: 100%;
+                                            height: 100%;
+                                            background-color: $color42;
+                                            border-radius: 20px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+
+                                            .teacherName {
+                                                width: 100%;
+                                                padding: 0 .2rem;
+
+                                                p {
+                                                    display: block;
+                                                    width: 100%;
+                                                    white-space: wrap;
+                                                }
+                                            }
+                                        }
+
+                                        .actionEditSession {
+                                            width: 100%;
+                                            height: 100%;
+                                            background-color: $color42;
+                                            border-radius: 20px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+                                            display: none;
+
+                                            .hoverEditSession {
+                                                height: 50%;
+                                                border-radius: 20px 20px 0 0;
+                                                background-color: $primaryColor;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                border-bottom: 2px solid $white;
+                                            }
+                                            .hoverAddSession {
+                                                height: 100%;
+                                                border-radius: 20px;
+                                                background-color: $primaryColor;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                border-bottom: 2px solid $white;
+                                            }
+
+                                            .hoverDeleteSession {
+                                                height: 50%;
+                                                border-radius: 0 0 20px 20px;
+                                                background-color: $color18;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+
+                                            p {
+                                                color: $white;
+                                                margin: 0;
+                                            }
+                                        }
+                                    }
+
+                                    .editSession:hover {
+
+                                        // background-color: $color24;
+                                        .dataBinded {
+                                            display: none;
+                                        }
+
+                                        .actionEditSession {
+                                            display: block;
+                                        }
+                                    }
+
+                                    .actionEditSession {
+                                        display: none;
+                                    }
+
+                                    .dataSessionSlot {
+                                        // background-color: $white !important;
+                                        border-radius: 0 0 0 20px;
+                                    }
+
+                                    .dataSessionT7 {
+                                        border-radius: 0 0 20px 0 !important;
+                                    }
+
+                                    .subjectName {
+                                        p {
+                                            font-weight: 600;
+                                        }
+                                    }
+
+                                    .teacherName {
+                                        overflow: hidden;
+                                        p {
+                                            display: block;
+                                            width: 100%;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .borderContentRightTimeTable::-webkit-scrollbar {
+                        height: 7px;
+                        width: 7px;
+                    }
+
+                    .borderContentRightTimeTable::-webkit-scrollbar-thumb {
+                        background: $color14;
+                        border-radius: 6px;
+                    }
+
+                    /* Thanh cuộn dọc */
+                    .borderContentRightTimeTable::-webkit-scrollbar-track {
+                        margin: 0;
+                        background: $white;
+                        border-radius: 6px;
+                    }
+
+                    .borderContentRightTimeTable::-webkit-scrollbar-track {
+                        margin: .5rem 0;
+                        background: transparent;
+                        border-radius: 6px;
+                    }
+
+                    .borderContentRightTimeTable::-webkit-scrollbar-thumb:hover {
+                        background: $color1;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    .even-row {
+        // background-color: $color7;
+        background-color: $color24;
+    }
+
+    .odd-row {
+        background-color: $white;
+    }
+}

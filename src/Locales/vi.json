@@ -1,0 +1,321 @@
+{
+    "locale": "vi-VN",
+    "date": {
+        "ca": [
+            "gregory",
+            "generic"
+        ],
+        "hourNo0": true,
+        "hour12": false,
+        "formats": {
+            "short": "{0}, {1}",
+            "medium": "{0}, {1}",
+            "full": "{0} {1}",
+            "long": "{0} {1}",
+            "availableFormats": {
+                "d": "d",
+                "E": "ccc",
+                "Ed": "E, 'ngày' d",
+                "Ehm": "E h:mm a",
+                "EHm": "E HH:mm",
+                "Ehms": "E h:mm:ss a",
+                "EHms": "E HH:mm:ss",
+                "Gy": "y G",
+                "GyMMM": "MMM y G",
+                "GyMMMd": "dd MMM, y G",
+                "GyMMMEd": "E, d MMM, y G",
+                "h": "h a",
+                "H": "HH",
+                "hm": "h:mm a",
+                "Hm": "H:mm",
+                "hms": "h:mm:ss a",
+                "Hms": "HH:mm:ss",
+                "hmsv": "h:mm:ss a v",
+                "Hmsv": "HH:mm:ss v",
+                "hmv": "h:mm a v",
+                "Hmv": "HH:mm v",
+                "M": "L",
+                "Md": "dd/M",
+                "MEd": "E, dd/M",
+                "MMdd": "dd-MM",
+                "MMM": "LLL",
+                "MMMd": "d MMM",
+                "MMMEd": "E, d MMM",
+                "MMMMd": "d MMMM",
+                "MMMMEd": "E, d MMMM",
+                "mmss": "mm:ss",
+                "ms": "mm:ss",
+                "y": "y",
+                "yM": "M/y",
+                "yMd": "d/M/y",
+                "yMEd": "E, dd/M/y",
+                "yMM": "'tháng' MM, y",
+                "yMMM": "MMM y",
+                "yMMMd": "d MMM, y",
+                "yMMMEd": "E, d MMM, y",
+                "yMMMM": "MMMM 'năm' y",
+                "yQQQ": "QQQ y",
+                "yQQQQ": "QQQQ 'năm' y"
+            },
+            "dateFormats": {
+                "yMMMMEEEEd": "EEEE, 'ngày' dd MMMM 'năm' y",
+                "yMMMMd": "'Ngày' dd 'tháng' MM 'năm' y",
+                "yMMMd": "d MMM, y",
+                "yMd": "dd/MM/y"
+            },
+            "timeFormats": {
+                "hmmsszzzz": "HH:mm:ss zzzz",
+                "hmsz": "HH:mm:ss z",
+                "hms": "HH:mm:ss",
+                "hm": "HH:mm"
+            }
+        },
+        "calendars": {
+            "generic": {
+                "months": {
+                    "narrow": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12"
+                    ],
+                    "short": [
+                        "M01",
+                        "M02",
+                        "M03",
+                        "M04",
+                        "M05",
+                        "M06",
+                        "M07",
+                        "M08",
+                        "M09",
+                        "M10",
+                        "M11",
+                        "M12"
+                    ],
+                    "long": [
+                        "M01",
+                        "M02",
+                        "M03",
+                        "M04",
+                        "M05",
+                        "M06",
+                        "M07",
+                        "M08",
+                        "M09",
+                        "M10",
+                        "M11",
+                        "M12"
+                    ]
+                },
+                "days": {
+                    "narrow": [
+                        "CN",
+                        "T2",
+                        "T3",
+                        "T4",
+                        "T5",
+                        "T6",
+                        "T7"
+                    ],
+                    "short": [
+                        "CN",
+                        "Th 2",
+                        "Th 3",
+                        "Th 4",
+                        "Th 5",
+                        "Th 6",
+                        "Th 7"
+                    ],
+                    "long": [
+                        "Chủ Nhật",
+                        "Thứ Hai",
+                        "Thứ Ba",
+                        "Thứ Tư",
+                        "Thứ Năm",
+                        "Thứ Sáu",
+                        "Thứ Bảy"
+                    ]
+                },
+                "eras": {
+                    "narrow": [
+                        "ERA0",
+                        "ERA1"
+                    ],
+                    "short": [
+                        "ERA0",
+                        "ERA1"
+                    ],
+                    "long": [
+                        "ERA0",
+                        "ERA1"
+                    ]
+                },
+                "dayPeriods": {
+                    "am": "SA",
+                    "pm": "CH"
+                }
+            },
+            "gregory": {
+                "months": {
+                    "narrow": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12"
+                    ],
+                    "short": [
+                        "Thg 1",
+                        "Thg 2",
+                        "Thg 3",
+                        "Thg 4",
+                        "Thg 5",
+                        "Thg 6",
+                        "Thg 7",
+                        "Thg 8",
+                        "Thg 9",
+                        "Thg 10",
+                        "Thg 11",
+                        "Thg 12"
+                    ],
+                    "long": [
+                        "Tháng 1",
+                        "Tháng 2",
+                        "Tháng 3",
+                        "Tháng 4",
+                        "Tháng 5",
+                        "Tháng 6",
+                        "Tháng 7",
+                        "Tháng 8",
+                        "Tháng 9",
+                        "Tháng 10",
+                        "Tháng 11",
+                        "Tháng 12"
+                    ]
+                },
+                "days": {
+                    "narrow": [
+                        "CN",
+                        "T2",
+                        "T3",
+                        "T4",
+                        "T5",
+                        "T6",
+                        "T7"
+                    ],
+                    "short": [
+                        "CN",
+                        "Th 2",
+                        "Th 3",
+                        "Th 4",
+                        "Th 5",
+                        "Th 6",
+                        "Th 7"
+                    ],
+                    "long": [
+                        "Chủ Nhật",
+                        "Thứ Hai",
+                        "Thứ Ba",
+                        "Thứ Tư",
+                        "Thứ Năm",
+                        "Thứ Sáu",
+                        "Thứ Bảy"
+                    ]
+                },
+                "eras": {
+                    "narrow": [
+                        "tr. CN",
+                        "sau CN",
+                        "BCE",
+                        "CE"
+                    ],
+                    "short": [
+                        "tr. CN",
+                        "sau CN",
+                        "BCE",
+                        "CE"
+                    ],
+                    "long": [
+                        "tr. CN",
+                        "sau CN",
+                        "BCE",
+                        "CE"
+                    ]
+                },
+                "dayPeriods": {
+                    "am": "SA",
+                    "pm": "CH"
+                }
+            }
+        }
+    },
+    "number": {
+        "nu": [
+            "latn"
+        ],
+        "patterns": {
+            "decimal": {
+                "positivePattern": "{number}",
+                "negativePattern": "{minusSign}{number}"
+            },
+            "currency": {
+                "positivePattern": "{currency} {number}",
+                "negativePattern": "{minusSign}{currency} {number}"
+            },
+            "percent": {
+                "positivePattern": "{number}{percentSign}",
+                "negativePattern": "{minusSign}{number}{percentSign}"
+            }
+        },
+        "symbols": {
+            "latn": {
+                "decimal": ",",
+                "group": ".",
+                "nan": "NaN",
+                "plusSign": "+",
+                "minusSign": "-",
+                "percentSign": "%",
+                "infinity": "∞"
+            }
+        },
+        "currencies": {
+            "AUD": "AU$",
+            "BRL": "R$",
+            "CAD": "CA$",
+            "CNY": "CN¥",
+            "EUR": "€",
+            "GBP": "£",
+            "HKD": "HK$",
+            "ILS": "₪",
+            "INR": "₹",
+            "JPY": "JP¥",
+            "KRW": "₩",
+            "MXN": "MX$",
+            "NZD": "NZ$",
+            "THB": "฿",
+            "TWD": "NT$",
+            "USD": "US$",
+            "VND": "₫",
+            "XAF": "FCFA",
+            "XCD": "EC$",
+            "XOF": "CFA",
+            "XPF": "CFPF"
+        }
+    }
+}

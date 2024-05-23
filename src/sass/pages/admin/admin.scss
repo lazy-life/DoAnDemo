@@ -1,0 +1,59 @@
+#admin-wrapper {
+    margin-top: 70px;
+    background-color: $color20;
+    color: $color10;
+
+    .admin-content {
+        display: flex;
+        width: 100%;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+}
+
+.loading {
+    $root: rgba(27, 27, 27, 1);
+    $white: rgba(255, 255, 255, 1);
+    $maron: rgba(199, 169, 149, 1);
+
+    @mixin transition($time) {
+        transition: all $time ease;
+    }
+
+    @mixin center {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        font-family: lato;
+        background: $root;
+    }
+
+    .loader {
+        position: absolute;
+        left: 50%;
+        @include center;
+
+        svg {
+            path {
+                fill: $primaryColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+#school-detail-wrapper {
+    color: $textTitleColor;
+    .school-detail-title {
+        color: $color10;
+        div {
+            width: 250px;
+            border-radius: 20px 20px 0 0;
+            svg {
+                padding-right: 10px;
+            }
+        }
+    }
+    #information-container {
+        height: calc(100vh - 230px);
+        border-radius: 0 20px 20px 20px;
+        .label {
+            width: 200px;
+        }
+    }
+}

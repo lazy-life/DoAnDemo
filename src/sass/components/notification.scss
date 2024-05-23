@@ -1,0 +1,109 @@
+@import '../abstracts/variables.scss';
+
+#notification-wrapper {
+    height: 320px;
+    background-color: $white;
+    border-radius: 20px;
+    box-shadow: rgba(20, 6, 0, 0.288) 0px 3px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    .titleNotice {
+        border-bottom: 2px solid $color7;
+        height: fit-content;
+        padding-left: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .titleNotice p {
+        font-family: 'GoogleSans-Bold';
+        font-size: 18px;
+        margin: 0;
+        color: $color10;
+    }
+    
+
+    .scroll {
+        height: 83%;
+        overflow-y: auto;
+        border-radius: 0 0 30px 30px;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $color1;
+            border-radius: 30px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: $color1;
+            border-radius: 30px;
+        }
+
+        &::-webkit-scrollbar-track {
+            margin-bottom: .3rem;
+            background-color: transparent;
+        }
+    }
+
+    .contentNotice {
+        font-family: 'GoogleSans-Medium';
+    }
+
+    .notice:hover{
+        cursor: pointer;
+        background-color: $color9;
+    }
+
+    .notice {
+        width: 96%;
+        margin: 2% 2% 3% 2%;
+        border-radius: 20px;
+        background-color: $color8;
+        display: flex;
+        align-items: center;
+    }
+
+    .noticeContent{
+        width: 95%;
+
+    }
+    .noticeContent p {
+        display: flex;
+        align-items: center;
+        padding: 2% 10% 0 5%;
+        margin: 0;
+        color: $color10;
+    }
+
+    .noticeContent .timeNotice{
+        font-size: 14px;
+        color: $color5;
+        padding: 0% 10% 2% 5%;
+    }
+
+    .noticeMark{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $primaryColor;
+    }
+
+    .no-notifications{
+        height: 250px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .noContent{
+        font-size: 5rem;
+    }
+
+    .noContent p{
+       font-size: 18px;
+    }
+}

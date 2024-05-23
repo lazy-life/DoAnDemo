@@ -1,0 +1,298 @@
+#listClass-wrapper {
+    background-color: $color20;
+    margin: 0 1rem;
+    color: $textTitleColor !important;
+
+    .listClassBorder {
+        width: 100%;
+        max-height: calc(100vh - 8rem);
+        min-height: calc(100vh - 8rem);
+        border-radius: 20px;
+
+        .topContent {
+            background-color: $white;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            padding: .2rem 1rem;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+            p {
+                margin: 0;
+                font-size: 18px;
+                font-weight: bold;
+                color: $color30 !important;
+                padding: .2rem 0;
+            }
+
+            .titleContent {
+                border-right: 2px solid $primaryColor;
+                text-align: center;
+            }
+        }
+
+        .content {
+            height: calc(100vh - 10rem);
+            border-radius: 0 0 20px 20px;
+            background-color: $white;
+            margin-top: .3rem;
+            padding: .2rem 1rem;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+            display: flex;
+
+            p {
+                margin: 0;
+            }
+
+            .gradeContent {
+                padding-right: 1rem;
+            }
+
+            .classNameContent,
+            .homeroomTeacherContent {
+                padding: 0 1rem;
+            }
+
+            .gradeContent,
+            .classNameContent,
+            .homeroomTeacherContent {
+                border-right: 2px solid $primaryColor;
+            }
+
+            .gradeAction,
+            .classAction,
+            .teacherAction {
+                border-radius: 20px;
+                margin-top: .1rem;
+
+                p {
+                    padding: .5rem 0;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+
+            .gradeAction:hover,
+            .classAction:hover {
+                cursor: pointer;
+                background-color: $color21;
+            }
+
+            .classNameContent {
+                overflow-y: auto;
+                height: 90%;
+            }
+
+            .addClassBtn {
+                height: 10%;
+                border-right: 2px solid $primaryColor;
+
+                .addBtn {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px 20px 0 0;
+                    box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.1);
+
+                    button {
+                        background-color: $primaryColor;
+                        color: $white;
+                        width: 80%;
+                        border-radius: 20px;
+                        // padding: .8rem 1rem;
+                        height: 80%;
+                    }
+                }
+            }
+
+            .classNameContent::-webkit-scrollbar {
+                height: 7px;
+                width: 7px;
+            }
+
+            .classNameContent::-webkit-scrollbar-thumb {
+                background: $color14;
+                border-radius: 6px;
+            }
+
+            /* Thanh cuộn dọc */
+            .classNameContent::-webkit-scrollbar-track {
+                margin: 0;
+                background: $white;
+                border-radius: 6px;
+            }
+
+            .classNameContent::-webkit-scrollbar-track {
+                margin: .5rem 0;
+                background: transparent;
+                border-radius: 6px;
+            }
+
+            .classNameContent::-webkit-scrollbar-thumb:hover {
+                background: $color1;
+            }
+
+            .classAction {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 .5rem;
+
+                p {
+                    width: 70%;
+                }
+
+                .iconAction {
+                    width: 15%;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: .3rem;
+
+                    svg {
+                        width: 1.3rem;
+                        height: 1.3rem;
+                    }
+                }
+
+                .iconAction:hover {
+                    background-color: $color25;
+                }
+
+            }
+
+
+            .active {
+                background-color: $color26 !important;
+            }
+
+            .modifyClassContent {
+                padding-left: 1rem;
+                margin: auto;
+
+                .borderModifyClass {
+                    height: calc(100vh - 12rem);
+                    width: 100%;
+                    box-shadow: 0px 0px 3px 2px #c5c5c570;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    button {
+                        background-color: $primaryColor;
+                        color: $white;
+                        width: 60%;
+                        border-radius: 20px;
+                        padding: .5rem 1rem;
+                    }
+                }
+
+                .modifyClass {
+                    height: calc(100vh - 12rem);
+                    width: 100%;
+                    box-shadow: 0px 0px 3px 2px #c5c5c570;
+                    border-radius: 20px;
+                    padding: .5rem 1rem;
+
+
+                    .titleModify {
+                        display: flex;
+                        justify-content: center;
+
+                        p {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .contentModify {
+                        .topContentModify {
+
+                            .txtTitle {
+                                font-weight: bold;
+                                margin-bottom: .3rem;
+                            }
+
+                            input {
+                                width: 100%;
+                                outline: none;
+                                border: 2px solid $color38;
+                                border-radius: 20px;
+                                padding: .5rem .5rem;
+                                box-shadow: none !important;
+                            }
+
+                            input:focus {
+                                border: 2px solid $color38 !important;
+                            }
+                        }
+
+                        .bottonContentModify {
+                            margin-top: 1rem;
+
+                            .txtTitle {
+                                font-weight: bold;
+                                margin-bottom: .3rem;
+                            }
+
+                            .selectTeacher {
+                                border: 2px solid $color38;
+                                border-radius: 20px;
+                                // padding: .5rem .5rem;
+                            }
+
+                        }
+                    }
+
+                    .btnAcion {
+                        margin-top: 2rem;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .cancel,
+                        .save {
+                            color: $white;
+                            width: 45%;
+                            border-radius: 20px;
+                            padding: .5rem 1rem;
+                        }
+
+                        .save {
+                            background-color: $primaryColor;
+                        }
+
+                        .cancel {
+                            background-color: $color5;
+                        }
+                    }
+                }
+            }
+
+            .showTeacherTeaching {
+                padding-left: 1rem;
+                display: flex;
+                justify-content: center;
+
+                .gradeAction {
+                    width: 100%;
+                    padding: 0 2rem;
+
+                    p {
+                        text-align: left;
+                    }
+                }
+
+                .teacherinClass {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                }
+
+            }
+        }
+    }
+}

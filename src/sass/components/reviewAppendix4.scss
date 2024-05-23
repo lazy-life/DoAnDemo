@@ -1,0 +1,291 @@
+
+#listAppendix4-wrapper {
+    width: 100%;
+
+    p {
+        margin: 0;
+    }
+
+    .noContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size:25px;
+        color: $textColor;
+        p{
+            color: $textColor;
+            font-size: 16px !important;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+
+    .borderLessonList {
+        display: flex;
+        overflow-y: scroll;
+
+        p {
+            margin: 0;
+        }
+
+    }
+
+    .borderLessonListTitle {
+        display: flex;
+        overflow-y: scroll;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .borderLessonList::-webkit-scrollbar {
+        height: 7px;
+        width: 7px;
+    }
+
+    .borderLessonList::-webkit-scrollbar-thumb {
+        background: $color14;
+        border-radius: 6px;
+    }
+
+    /* Thanh cuộn dọc */
+    .borderLessonList::-webkit-scrollbar-track {
+        margin: 0;
+        background: $white;
+        border-radius: 6px;
+    }
+
+    .borderLessonListTitle::-webkit-scrollbar-track {
+        margin: 0;
+        background: transparent;
+        border-radius: 6px;
+    }
+
+    .borderLessonList::-webkit-scrollbar-thumb:hover {
+        background: $color1;
+    }
+
+    .topTitle {
+        background-color: $white;
+        border-radius: 0 20px 0 0;
+        display: flex;
+        width: 100%;
+        padding: .4rem 0;
+        box-shadow: rgba(50, 50, 93, 0.15) 0px 2px 5px -1px, rgba(0, 0, 0, 0.2) 0px 1px 3px -1px;
+
+        p {
+            font-size: 18px;
+            color: $color30;
+            font-weight: 700;
+        }
+
+        .topTitleAlign {
+            display: flex;
+            justify-content: center;
+            border-right: 2px solid $primaryColor;
+        }
+
+        .topTitleAlignLesson {
+            display: flex;
+            justify-content: center;
+            border-right: 2px solid $color17;
+        }
+    }
+    .topTitle3 {
+        background-color: $white;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        width: 100%;
+        padding: .4rem 0;
+        box-shadow: rgba(50, 50, 93, 0.15) 0px 2px 5px -1px, rgba(0, 0, 0, 0.2) 0px 1px 3px -1px;
+
+        p {
+            font-size: 18px;
+            color: $color30;
+            font-weight: 700;
+        }
+
+        .topTitleAlign {
+            display: flex;
+            justify-content: center;
+            border-right: 2px solid $primaryColor;
+        }
+
+        .topTitleAlignLesson {
+            display: flex;
+            justify-content: center;
+            border-right: 2px solid $color17;
+        }
+    }
+
+    .contentAppendix {
+        background-color: $white;
+        display: flex;
+        width: 100%;
+        height: calc(calc(100vh - 12rem));
+        padding: .7rem 0;
+        margin-top: .5rem;
+        border-radius: 0 0 20px 20px;
+        box-shadow: rgba(50, 50, 93, 0.15) 0px 2px 5px -1px, rgba(0, 0, 0, 0.2) 0px 1px 3px -1px;
+
+        p {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .topTitleAlign {
+
+            padding: 0 1rem;
+            border-right: 2px solid $primaryColor;
+
+            .subjectSelect {
+                padding: .5rem .3rem .5rem 1rem;
+                border-radius: 30px;
+                margin-top: .1rem;
+
+                p {
+                    margin: 0;
+                    padding-left: 0rem;
+                }
+            }
+
+            .subjectSelected {
+                padding: .5rem .3rem .5rem 1rem;
+                background-color: $color26;
+                border-radius: 30px;
+                margin-top: .1rem;
+
+                p {
+                    margin: 0;
+                    padding-left: 0rem;
+                    padding-right: .2rem;
+                }
+            }
+
+            .subjectSelect:hover {
+                cursor: pointer;
+                background-color: $color21;
+            }
+
+            .gradeSelect {
+                padding: .5rem .3rem .5rem 1rem;
+                border-radius: 30px;
+                margin-top: .1rem;
+
+                p {
+                    margin: 0;
+                    padding-left: .3rem;
+                }
+            }
+
+            .gradeSelected {
+                padding: .5rem .3rem .5rem 1rem;
+                background-color: $color26;
+                border-radius: 30px;
+                margin-top: .1rem;
+
+                p {
+                    margin: 0;
+                    padding-left: .3rem;
+                }
+            }
+
+            .gradeSelect:hover {
+                cursor: pointer;
+                background-color: $color21;
+            }
+
+            .gradeSelected:hover,
+            .subjectSelected:hover {
+                cursor: pointer;
+            }
+        }
+
+        .topTitleAlignLesson {
+            // padding: 0 1rem;
+            width: 100%;
+            border-right: 2px solid $color17;
+
+            .lessonSelect {
+                width: 100%;
+                padding: .5rem 0rem .5rem 0rem;
+                // border-radius: 30px;
+                margin-top: .1rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                p {
+                    margin: 0;
+                    padding-left: .3rem;
+                    white-space: nowrap;
+                }
+            }
+
+            .lessonSelectAction {
+                padding: .3rem 0rem .3rem 0rem;
+                // border-radius: 30px;
+                margin-top: .1rem;
+
+                p {
+                    margin: 0;
+                    padding-left: .3rem;
+                }
+            }
+
+            .action {
+                padding: .2rem 0rem .2rem 0rem;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+
+                p{
+                    padding-left: 0;
+                }
+            }
+
+            .action:hover {
+                background-color: $color25;
+            }
+        }
+
+        .even-row {
+            background-color: $color24;
+        }
+
+        .odd-row {
+            background-color: $white;
+        }
+
+        .even-row:hover {
+            background-color: $color21;
+            cursor: pointer;
+        }
+
+        .odd-row:hover {
+            background-color: $color21;
+            cursor: pointer;
+        }
+    }
+
+    .uploadLesson3Btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .button{
+            width: 30%;
+            padding: .5rem 0;
+            color: white;
+            background-color: $primaryColor;
+            border-radius: 20px;
+        }
+
+        .button:hover{
+            cursor: pointer;
+        }
+    }
+}

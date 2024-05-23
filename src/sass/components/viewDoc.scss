@@ -1,0 +1,199 @@
+#viewDoc-wrapper {
+    background-color: rgba(0, 0, 0, 0.64);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: $textTitleColor !important;
+
+    p {
+        margin: 0;
+    }
+
+    .viewDocBorder {
+        width: 80%;
+        height: 90%;
+        background-color: $white;
+        border-radius: 20px;
+
+        .topPopup {
+            width: 100%;
+            height: 8%;
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            justify-content: space-between;
+            border-bottom: 2px solid $color14;
+
+            p {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .closeBtn {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+
+            .closeBtn:hover {
+                background-color: $color16;
+                cursor: pointer;
+                color: $white;
+            }
+
+            .nameFile {
+                width: 50%;
+                display: flex;
+                overflow: hidden;
+                align-items: center;
+
+                svg{
+                    width: 18px;
+                    height: 18px;
+                }
+
+                .nameViewDocument{
+                    width: 85%;
+                    white-space: nowrap;
+                    margin-left: .5rem;
+                }
+            }
+
+            .bottomPopup {
+                width: 40%;
+                display: none;
+                height: 90%;
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                padding: 0 1rem;
+
+                button {
+                    height: 80%;
+                    border-radius: 20px;
+                    padding: 0rem 3rem;
+                    color: $white;
+                }
+
+                .save {
+                    background-color: $color45;
+                    margin-left: 1rem;
+                }
+
+                .download {
+                    background-color: $color18;
+
+                    svg {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+
+
+            }
+            
+        }
+
+        .centerPopup {
+            width: 100%;
+            height: 92%;
+
+            .iQKGEp {
+                margin: .5rem;
+                border: none;
+            }
+
+        }
+    }
+
+    .errorLoad {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .ui-error {
+            width: 100px;
+            height: 100px;
+            margin: 0 0 40px 0;
+            // border:1px solid #eee;
+        }
+
+        .ui-error {
+            &-circle {
+                stroke-dasharray: 260.75219024795285px, 260.75219024795285px;
+                stroke-dashoffset: 260.75219024795285px;
+                animation: ani-error-circle 1.2s linear;
+            }
+
+            &-line1 {
+                stroke-dasharray: 54px 55px;
+                stroke-dashoffset: 55px;
+                stroke-linecap: round;
+                animation: ani-error-line .15s 1.2s linear both;
+            }
+
+            &-line2 {
+                stroke-dasharray: 54px 55px;
+                stroke-dashoffset: 55px;
+                stroke-linecap: round;
+                animation: ani-error-line .2s .9s linear both;
+            }
+        }
+
+        @keyframes ani-error-line {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes ani-error-circle {
+            0% {
+                stroke-dasharray: 0, 260.75219024795285px;
+                stroke-dashoffset: 0;
+            }
+
+            35% {
+                stroke-dasharray: 120px, 120px;
+                stroke-dashoffset: -120px;
+            }
+
+            70% {
+                stroke-dasharray: 0, 260.75219024795285px;
+                stroke-dashoffset: -260.75219024795285px;
+            }
+
+            100% {
+                stroke-dasharray: 260.75219024795285px, 0;
+                stroke-dashoffset: -260.75219024795285px;
+            }
+        }
+    }
+
+    .kiIQVn {
+        overflow-y: hidden !important;
+    }
+
+}

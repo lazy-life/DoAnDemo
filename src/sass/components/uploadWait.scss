@@ -1,0 +1,140 @@
+#uploadWait-wrapper {
+    width: 20%;
+    min-height: 3rem;
+    max-height: 17vh;
+    background-color: $white;
+    border-radius: 15px 15px 15px 15px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 12;
+    margin: .8rem 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    .topHeader {
+        padding: 0 .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid $color16;
+        background-color: $color24;
+        border-radius: 15px 15px 0 0;
+        height: 2rem;
+
+        .iconAction{
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+        .iconClose {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .iconClose:hover{
+            cursor: pointer;
+            background-color: $color38;
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+        }
+    }
+
+    .contentData {
+        padding: .3rem 0;
+        height: calc(16vh - 2rem);
+        border-radius: 0 0 15px 15px;
+        overflow-y: auto;
+
+        p {
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        .perItem {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+            background-color: $color19;
+            border-radius: 10px;
+            margin-bottom: .2rem;
+            border-left: .3rem solid $color19;
+
+
+            .iconUpload {
+                width: 15%;
+                padding: .1rem;
+                // background-color: $color19;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // border-radius: 50%;
+                // background-color: $color38;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            .nameUploadFile {
+                width: 85%;
+                margin-right: 5px;
+                overflow: hidden;
+
+                p {
+                    font-size: 15px;
+                    white-space: nowrap;
+                }
+            }
+
+
+        }
+
+        .perItem:hover {
+            cursor: pointer;
+            background-color: $color42;
+            border-left: .3rem solid $color42;
+        }
+    }
+
+    .contentData::-webkit-scrollbar {
+        height: 5px;
+        width: 3px;
+    }
+
+    .contentData::-webkit-scrollbar-thumb {
+        background: $color14;
+        border-radius: 10px;
+
+    }
+
+    .contentData::-webkit-scrollbar-track {
+        margin: 0;
+        background: $white;
+        border-radius: 6px;
+    }
+
+    .contentData::-webkit-scrollbar-track {
+        margin: 0 0 .8rem 0;
+        background: transparent;
+        border-radius: 6px;
+    }
+
+    .contentData::-webkit-scrollbar-thumb:hover {
+        background: $color1;
+    }
+}

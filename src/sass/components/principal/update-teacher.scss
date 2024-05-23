@@ -1,0 +1,23 @@
+#update-teacher-wrapper {
+    .modal-dialog {
+        max-width: 50%;
+        color: $textColor;
+
+        .modal-create {
+            border-radius: 30px;
+
+            .create-title {
+                font-size: 1.25rem;
+            }
+
+            label {
+                width: 150px !important;
+                text-align: start;
+            }
+
+            .hometown-select {
+                width: calc(50% - 5px);
+            }
+        }
+    }
+}

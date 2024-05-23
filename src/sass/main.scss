@@ -1,0 +1,82 @@
+@import "./abstracts/variables.scss";
+
+@import "./base/reset.scss";
+@import "./base/utilities.scss";
+@import "./base/global.scss";
+
+// @import "./components/";
+@import "./components/header.scss";
+@import "./components/notification.scss";
+@import "./components/avatar.scss";
+@import "./components/information.scss";
+@import "./components/success.scss";
+@import "./components/sideBar.scss";
+@import "./components/sideBarPrincipal.scss";
+@import "./components/listSchool.scss";
+@import "./components/deleteConfirm.scss";
+@import "./components/modifySchool.scss";
+@import "./components/selectDropdown.scss";
+@import "./components/viewSchool.scss";
+@import "./components/multiple-select.scss";
+@import "./components/admin/overall-subjects.scss";
+@import "./components/admin/deleted-schools.scss";
+@import "./components/admin/enable-school.scss";
+@import "./components/principal/create-department.scss";
+@import "./components/principal/update-department.scss";
+@import "./components/principal/add-teacher.scss";
+@import "./components/principal/update-teacher.scss";
+@import "./components/principal/teacher-detail.scss";
+@import "./components/principal/update-school.scss";
+@import "./components/principal/view-appendix4.scss";
+@import "./components/appendix.scss";
+@import "./components/listAppendix.scss";
+@import "./components/appendixPattern.scss";
+@import "./components/scormPlayer.scss";
+@import "./components/viewDocument.scss";
+@import "./components/teachNow.scss";
+@import "./components/menuViewDocument.scss";
+@import "./components/listClass.scss";
+@import "./components/timeTable.scss";
+@import "./components/modifySession.scss";
+@import "./components/addSemester.scss";
+@import "./components/viewDoc.scss";
+@import "./components/approveDoc.scss";
+@import "./components/preLoadPage.scss";
+@import "./components/reviewAppemdix.scss";
+@import "./components/reviewAppendix4.scss";
+@import "./components/logoutConfirm.scss";
+@import "./components/errorPopup.scss";
+@import "./components/uploadWait.scss";
+@import "./components/loadingDataWait.scss";
+@import "./components/approveScorm.scss";
+@import "./components/commentReject.scss";
+@import "./components/modify-lesson.scss";
+@import "./components/listLessonPlan.scss";
+
+@import "./pages/headOfDepartment/headOfDepartmentPage.scss";
+@import "./pages/headOfDepartment/department-information.scss";
+@import "./pages/headOfDepartment/syllabus.scss";
+// @import "./layouts/";
+
+@import "./pages/login.scss";
+@import "./pages/forget-password.scss";
+@import "./pages/admin/admin.scss";
+@import "./pages/principal/principal-page.scss";
+@import "./pages/principal/principal-view-departments.scss";
+@import "./pages/principal/principal-view-subjects.scss";
+@import "./pages/principal/principal-view-lesson-plans.scss";
+@import "./pages/principal/principal-review-lesson-plans.scss";
+@import "./pages/principal/lesson-plan-templates.scss";
+@import "./pages/principal/principal-view-teachers.scss";
+@import "./pages/principal/principal-view-syllabus.scss";
+@import "./pages/principal/school-detail.scss";
+@import "./pages/principal/school-year.scss";
+@import "./pages/teacher/teacher.scss";
+@import "./pages/teacher/hompageTeacher.scss";
+
+// @import "./themes/";
+
+@import "./vendors/boostrap-import.scss";
+@import "./vendors/fontawesome-import.scss";
+
+

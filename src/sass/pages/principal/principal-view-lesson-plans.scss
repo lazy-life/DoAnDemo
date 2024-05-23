@@ -1,0 +1,162 @@
+#principal-lesson-plan-wrapper {
+    color: $textTitleColor;
+
+    .lesson-plan-type {
+        border-radius: 20px 20px 0 0;
+        font-family: 'GoogleSans-Medium';
+        cursor: pointer;
+    }
+
+    .active-type {
+        background-color: white;
+    }
+
+    .active-subject,
+    .active-teacher,
+    .active-grade {
+        background-color: rgba($primaryColor, 0.6);
+    }
+
+    .lesson-plan-title-container {
+        margin-top: 2px;
+        border-radius: 0 30px 0 0;
+
+        .column-title-1,
+        .column-title-2,
+        .column-title-3 {
+            border-right: 3px solid rgba($primaryColor, 0.5);
+        }
+
+        .column-title-1 {
+            width: 20%;
+        }
+
+        .column-title-2 {
+            width: 30%;
+        }
+
+        .column-title-3 {
+            width: 5%;
+        }
+
+        .column-title-4 {
+            width: 45%;
+        }
+    }
+
+    .appendix-4 {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .lesson-plan-container {
+        height: calc(100vh - 220px);
+        border-radius: 0 0 30px 30px;
+
+        p {
+            width: 80%;
+        }
+    }
+
+    .column-1,
+    .column-2,
+    .column-3 {
+        border-right: 3px solid rgba($primaryColor, 0.5);
+
+        p {
+            cursor: pointer;
+        }
+
+        p:hover {
+            background-color: rgba($primaryColor, 0.5);
+        }
+    }
+
+    .column-1 {
+        width: 20%;
+        overflow-y: auto;
+    }
+
+    .column-1::-webkit-scrollbar,
+    .column-2::-webkit-scrollbar,
+    .column-4::-webkit-scrollbar {
+        height: 7px;
+        width: 7px;
+    }
+
+    .column-1::-webkit-scrollbar-thumb,
+    .column-2::-webkit-scrollbar-thumb,
+    .column-4::-webkit-scrollbar-thumb {
+        background: $color14;
+        border-radius: 6px;
+    }
+
+    /* Thanh cuộn dọc */
+    .column-1::-webkit-scrollbar-track,
+    .column-2::-webkit-scrollbar-track,
+    .column-4::-webkit-scrollbar-track {
+        margin: 0;
+        background: $white;
+        border-radius: 6px;
+    }
+
+    .column-1::-webkit-scrollbar-track,
+    .column-2::-webkit-scrollbar-track,
+    .column-4::-webkit-scrollbar-track {
+        margin: 0.5rem 0;
+        background: transparent;
+        border-radius: 6px;
+    }
+
+    .column-1::-webkit-scrollbar-thumb:hover,
+    .column-2::-webkit-scrollbar-thumb:hover,
+    .column-4::-webkit-scrollbar-thumb:hover {
+        background: $color1;
+    }
+
+    .column-2 {
+        width: 30%;
+        overflow-y: auto;
+    }
+
+    .column-3 {
+        width: 5%;
+    }
+
+    .column-4 {
+        width: 45%;
+        overflow-y: auto;
+
+        .view-appendix3:hover,
+        .view-appendix4:hover {
+            cursor: pointer;
+            background-color: $color25;
+            border-radius: 10px;
+        }
+
+        .lesson-plan-item {
+            background-color: $color24;
+        }
+
+        .lesson-plan-item:hover {
+            cursor: pointer;
+            background-color: $color21;
+        }
+
+        .even-row {
+            td {
+                background-color: $color24;
+            }
+        }
+
+        .odd-row {
+            background-color: white;
+        }
+
+        .lesson-plan-name,
+        .lesson-name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

@@ -1,0 +1,195 @@
+#modifySchool-wrapper {
+    background-color: rgba(0, 0, 0, 0.64);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+    .popUp {
+        background-color: $white;
+        width: 70rem;
+        height: fit-content;
+        border-radius: 30px;
+    }
+
+    .backgroundErrorSelect {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.64);
+        position: fixed;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .errorSelect {
+            background-color: $white;
+            width: 20rem;
+            height: 13rem;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+            border: 3px solid #F56060;
+
+            .warning {
+                width: 100%;
+                text-align: center;
+                padding: 2rem 0;
+
+                svg {
+                    background-color: $white;
+                    width: 5rem;
+                    height: fit-content;
+                    border-radius: 50%;
+                    border: 5px solid #FFBA00;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+
+    .errorSelect {
+        position: fixed;
+        z-index: 20;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .topPopUp {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 0 0 0;
+    }
+
+    .middlePopUp {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+        .left,
+        .right {
+            display: flex;
+            align-items: center;
+
+            .leftValue,
+            .rightValue {
+                width: 100%;
+
+                .field {
+                    margin: 10px 0;
+                    height: fit-content;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    p {
+                        width: 120px;
+                        font-weight: bold;
+                    }
+
+                    input {
+                        width: 60%;
+                        border: 1px solid $color26;
+                        border-radius: 30px;
+                        outline: none;
+                        padding: 10px 10px;
+                    }
+
+                    input:focus {
+                        box-shadow: 0 0 0 0.15rem #ff510030 !important;
+                    }
+
+                }
+
+                .selectField {
+                    .seletOptionField {
+                        width: 60%;
+                        border: 1px solid $color26;
+                        border-radius: 30px;
+                        padding: 0 0;
+
+                        .dropbox {
+                            width: 100%;
+                            padding-left: 10px;
+                            display: flex;
+                            align-items: center;
+
+                            svg {
+                                font-size: 35px;
+                                color: $primaryColor;
+                                padding-right: 10px;
+                            }
+                        }
+
+                        .dropbox:hover {
+                            cursor: pointer;
+                        }
+
+                        p {
+                            width: 100%;
+                            font-weight: normal;
+                            padding: 10px 0;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+        .leftValue {
+
+            .seletOptionField,
+            input {
+                width: 70% !important;
+            }
+        }
+
+        .left {
+            width: 55%;
+        }
+
+        .right {
+            width: 45%;
+            border-left: 3px solid $color26;
+        }
+
+    }
+
+    .bottomPopUp {
+        display: flex;
+        height: 60px;
+        align-items: center;
+        padding: 0 20px;
+        border-top: 1px solid $color27;
+        justify-content: right;
+
+        button {
+            width: fit-content;
+            height: fit-content;
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin-left: 15px;
+        }
+
+        .cancel {
+            background-color: $color19;
+            color: $color28;
+            font-weight: 900;
+        }
+
+        .accept {
+            background-color: $primaryColor;
+            color: $white;
+        }
+    }
+
+}
